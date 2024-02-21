@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    <a class="btn btn-primary"   href="{% url 'about' %}">About</a>
+    <a class="btn btn-outline-warning" href="{% url 'formpage' %}">Form</a>
+{% load static %}
+        <link rel="stylesheet" href="{% static  'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootsrap.min.js' %}"></script>
+
+    
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        h1{
+            background-color: red;
+            line-height: 100px;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        }
+        h1:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Homepage</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum perferendis, vero! Adipisci consequatur, delectus dolore harum incidunt ipsa itaque nisi nostrum possimus? Adipisci consequuntur cupiditate iure molestiae omnis sed sit.</p>
+<img src="{% static 'images/dollar.jpeg' %}" alt="">
+<img src="{% static 'images/11.jpeg' %}" alt="">
+<img src="{% static 'images/66.jpeg' %}" alt="">
+<img src="{% static 'images/1.jpeg' %}" alt="">
+
+
+<br><br>
+<h1>Payment</h1>
+<p id="paragraph2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cupiditate dicta, non pariatur provident quia quis saepe sunt tenetur voluptates. Aliquam amet aspernatur non nulla pariatur porro quam quas voluptatum?</p>
+<img src="{% static 'images/11.jpeg' %}" alt="">
+
+</body>
+</html>
